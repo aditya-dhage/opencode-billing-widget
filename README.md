@@ -3,6 +3,12 @@
 A compact [OpenCode](https://opencode.ai) v2 TUI plugin that keeps your exact
 dollar spend visible in the session sidebar:
 
+![Billing widget in the OpenCode sidebar](https://raw.githubusercontent.com/aditya-dhage/opencode-billing-widget/main/assets/expanded.png)
+
+Click the header to collapse it down to a one-line month summary:
+
+![Billing widget collapsed](https://raw.githubusercontent.com/aditya-dhage/opencode-billing-widget/main/assets/collapsed.png)
+
 ```
 ▼ Billing
 $0.42   session
@@ -10,9 +16,6 @@ $3.17   today
 $11.05  week
 $23.90  october
 ```
-
-Click the header to collapse it down to a one-line month summary
-(`► Billing  (october $23.90)`).
 
 ## Why
 

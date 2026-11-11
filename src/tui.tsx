@@ -138,11 +138,11 @@ export default Plugin.define({
                 ? `► Billing  (${monthName} ${stats.ready ? usd(stats.month) : "…"})`
                 : "▼ Billing"}
             </text>
-            {!settings.collapsed && <text fg={muted()}>{`${usd(sessionCost)}   session`}</text>}
-            {!settings.collapsed && <text fg={muted()}>{`${stats.ready ? usd(stats.today) : "…"}   today`}</text>}
-            {!settings.collapsed && <text fg={muted()}>{`${stats.ready ? usd(stats.week) : "…"}   week`}</text>}
+            {!settings.collapsed && <text fg={muted()}>{`${usd(sessionCost).padEnd(9)}session`}</text>}
+            {!settings.collapsed && <text fg={muted()}>{`${(stats.ready ? usd(stats.today) : "…").padEnd(9)}today`}</text>}
+            {!settings.collapsed && <text fg={muted()}>{`${(stats.ready ? usd(stats.week) : "…").padEnd(9)}week`}</text>}
             {!settings.collapsed && (
-              <text fg={muted()}>{`${stats.ready ? usd(stats.month) : "…"}   ${monthName}`}</text>
+              <text fg={muted()}>{`${(stats.ready ? usd(stats.month) : "…").padEnd(9)}${monthName}`}</text>
             )}
           </box>
         )
